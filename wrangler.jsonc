@@ -1,0 +1,18 @@
+{
+  "name": "zbd-cloudflare-template",
+  "compatibility_date": "2026-03-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/agents/*", "/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [
+      { "name": "ZBD_AGENT", "class_name": "ZBDPaymentAgent" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["ZBDPaymentAgent"] }
+  ]
+}
