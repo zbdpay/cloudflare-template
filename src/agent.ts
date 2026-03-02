@@ -10,8 +10,8 @@ export type Env = {
 };
 
 export type AgentState = {
-  lastFetchUrl: string;
-  lastFetchAt: number;
+  lastFetchUrl: string | null;
+  lastFetchAt: number | null;
   totalSpentSats: number;
 };
 
@@ -27,8 +27,8 @@ type FetchPaidResult = {
 
 export class ZBDPaymentAgent extends Agent<Env, AgentState> {
   public initialState: AgentState = {
-    lastFetchUrl: "",
-    lastFetchAt: 0,
+    lastFetchUrl: null,
+    lastFetchAt: null,
     totalSpentSats: 0,
   };
 
@@ -144,6 +144,9 @@ export class ZBDPaymentAgent extends Agent<Env, AgentState> {
   }
 
   public async onStart(): Promise<void> {
+    console.log(
+      `ZBDPaymentAgent started for lightning address: ${this.env.ZBD_LIGHTNING_ADDRESS}`,
+    );
     if (this.state.lastFetchUrl) {
       await this.schedule(60, "scheduledFetch", { url: this.state.lastFetchUrl });
     }
