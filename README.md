@@ -35,7 +35,7 @@ A Cloudflare Workers starter for building AI agents that can pay and get paid ov
 2. **Initialize your ZBD wallet**
 
    ```bash
-   npx @zbdpay/agent-wallet init --key YOUR_ZBD_API_KEY
+   npx @axobot/cli init --key YOUR_ZBD_API_KEY
    ```
 
    This creates a Lightning address for your agent and prints it out. Save it for the next step.
@@ -115,7 +115,8 @@ cloudflare-template/
 ## References
 
 - [ZBD Agent Docs](https://docs.zbdpay.com/agents)
-- [@zbdpay/agent-fetch on npm](https://www.npmjs.com/package/@zbdpay/agent-fetch)
-- [@zbdpay/agent-pay on npm](https://www.npmjs.com/package/@zbdpay/agent-pay)
+- [@axobot/fetch on npm](https://www.npmjs.com/package/@axobot/fetch)
+- [@axobot/pay on npm](https://www.npmjs.com/package/@axobot/pay)
+- [@axobot/pay on npm](https://www.npmjs.com/package/@axobot/pay)
 - [Cloudflare Durable Objects](https://developers.cloudflare.com/durable-objects/)
 - [agents SDK](https://www.npmjs.com/package/agents)

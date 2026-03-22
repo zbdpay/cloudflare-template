@@ -10,8 +10,8 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "@zbdpay/agent-fetch": "^1.0.2",
-    "@zbdpay/agent-pay": "^1.0.2",
+    "@axobot/fetch": "^1.0.2",
+    "@axobot/pay": "^1.0.2",
     "agents": "^0.6.0",
     "hono": "^4.0.0",
     "react": "^19.0.0",
