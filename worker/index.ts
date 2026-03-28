@@ -3,7 +3,7 @@ import { routeAgentRequest } from "agents";
 import {
   createHonoPaymentMiddleware,
   type TokenStore,
-} from "@zbdpay/agent-pay";
+} from "@axobot/pay";
 import { ZBDPaymentAgent } from "../src/agent";
 
 type Env = {

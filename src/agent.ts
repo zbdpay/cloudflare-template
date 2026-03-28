@@ -1,4 +1,4 @@
-import { agentFetch, zbdPayL402Invoice } from "@zbdpay/agent-fetch";
+import { agentFetch, zbdPayL402Invoice } from "@axobot/fetch";
 import { Agent, callable } from "agents";
 
 import { DurableObjectTokenCache } from "./do-token-cache";

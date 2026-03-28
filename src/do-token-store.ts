@@ -1,5 +1,5 @@
 import type { DurableObjectStorage } from "@cloudflare/workers-types";
-import type { TokenStore } from "@zbdpay/agent-pay";
+import type { TokenStore } from "@axobot/pay";
 
 interface SettledTokenRecord {
   chargeId: string;

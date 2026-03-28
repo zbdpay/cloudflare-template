@@ -1,5 +1,5 @@
 import type { DurableObjectStorage } from "@cloudflare/workers-types";
-import type { TokenCache, TokenRecord } from "@zbdpay/agent-fetch";
+import type { TokenCache, TokenRecord } from "@axobot/fetch";
 
 const tokenKey = (url: string): string => `token:${url}`;
 
